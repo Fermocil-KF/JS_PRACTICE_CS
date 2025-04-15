@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Exercise 2</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Favorite Fast-Food Restuarant</h1>
+    
+    <br>
+
+        <input type="text" id="restaurant" placeholder="Enter your favorite fast-food restaurant">
+
+    <br> 
+
+        <button type="button" onclick="sapphire()"> Show Me</button>
+
+    <br>
+        
+        <h1 id="show_here"> Your Favorite Fast-Food is... </h1>
+
+    </div>
+
+    <script>
+
+        function sapphire() {
+            var resto = document.getElementById("restaurant").value;
+        if (resto == 'Jollibee') {
+            document.getElementById("show_here").innerHTML = "Bida ang Saya";
+        } else if (resto == 'KFC') {
+            document.getElementById("show_here").innerHTML = "Finger Lickin Good";
+        } else if (resto == 'McDonalds') {
+            document.getElementById("show_here").innerHTML = "I'm Lovin It";
+        } else if (resto == 'Popeyes') {
+            document.getElementById("show_here").innerHTML = "Love That Chicken from Popeyes";
+        } else {
+            document.getElementById("show_here").innerHTML = "Invalid Input!";
+        }
+        }
+    </script>
+</body>
+</html>
